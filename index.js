@@ -1,28 +1,46 @@
-// Create a simple todo list that has the following functionalities
+let input = document.querySelector("#new-task");
+let addBtn = document.querySelector("#add-button");
+let tasks = document.querySelector(".tasks");
 
-/**
- * add a new item to the todo list
- * remove an item in the todo list
- * edit an item in the todo list
-    Some further requirements:
-    - the input field must be reset when the add button is clicked on 
-    - the todo list must show the most recent first
-    - prevent empty values from being added to the list
-    - the todo list should be stored using localStorage
- */
+//add btn disabled
 
-const newTaskInput = document.getElementById('new-task');
-let todoList = [];
+input.addEventListener("keyup", () => {
+  if (input.value.trim() != 0) {
+    addBtn.classList.add("active");
+  } else {
+    addBtn.classList.remove("active");
+  }
+});
 
-function addItem () {
-}
+//adding new task
+addBtn.addEventListener("click", () => {
+  if (input.value.trim() != 0) {
+    let newItem = document.createElement("div");
+    newItem.classList.add("item");
+    newItem.innerHTML = `
+    <p> ${input.value} </p>
+            <div class="item-btn">
+              <button id="edit-button">Edit</button>
+              <button id="delete-button">Delete</button>
+            </div>
+            `
+  tasks.appendChild(newItem);
+  input.value = "";
+  } else{
+   alert("Please enter a task")
+  }
+});
 
-function editItem (item) {
+//delete item
+tasks.addEventListener("click", (e) => {
+   if (e.target.classList.contains("delete-button")){
+      e.target.parentElement.parentElement.remove();
+   }
+})
 
-}
 
-function deleteItem (item) {
-
-}
-
-
+tasks.addEventListener("click", (e) => {
+   if (e.target.classList.contains("Delete")){
+      e.target.parentElement.parentElement.remove();
+   }
+})

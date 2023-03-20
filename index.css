@@ -1,159 +1,23 @@
-/* Basic Style */
-
 *{
   box-sizing: border-box;
   margin: 0;
-}
-
-body {
-  background: #fff;
-  color: #333;
-  font-family: Lato, sans-serif;
-  background-color: rgb(7, 43, 57);
-  font-size: 16px;
-}
-
-.container {
-  display: block;
-  width: 500px;
-  margin: 10px auto 100px;
-  background-color: #dad8b9;
-  padding: 0px 10px 10px 10px;
-  border-radius: 10px;
-}
-
-.new-task-container {
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
-}
-
-h2 {
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 0px;
-}
-
-ul {
-  margin: 0;
   padding: 0;
 }
-
-li * {
-  float: left;
-}
-
-li,
-h3 {
-  clear: both;
-  list-style: none;
-}
-
-input,
-button {
-  outline: none;
-}
-
-button {
-  border: 0px;
-  color: white;
-  font-size: 1rem;
+body{
   font-family: Lato, sans-serif;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 8px;
-}
-
-
-
-button:hover {
-  color: #aba8a8;
-}
-
-/* Heading */
-
-h3,
-label[for="new-task"] {
-  color: #333;
-  font-weight: 700;
-  font-size: .9375rem;
-  border-bottom: 2px solid #333;
-  padding: 20px 0 10px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-input[type="text"] {
-  margin: 0;
-  font-size: 1.125rem;
-  line-height: 18px;
-  height: 18px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
-}
-
-input[type="text"]:focus {
-  color: #333;
-}
-
-/* New Task */
-
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-#new-task {
-  width: 318px;
-}
-
-/* Task list */
-
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  background-color: #f5f5f5 ;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-
-li > p {
-  font-size: 1.125rem;
-  line-height: 20px;
-  width: 237px;
-  padding: 0 0 0 8px;
+h2{
+  font-size: 30px;
+  color: rgb(8, 6, 133);
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 30px 0;
 }
-
-li > #delete:hover {
-  color: #c0c91b;
-}
-
-#add-button {
-	background-color: rgb(7, 8, 97);
-  width: 15%;
-}
-
-#delete-button {
-	background-color: rgb(121, 8, 8);
-  width: 15%;
-  height: 40px;
+.container{
+ border: 1px solid black;
+ 
   
-  
-}
-#edit-button{
-  background-color: green;
-  width: 15%;
-  height: 40px;
-  
-}
-#delete-button:hover{
-  background-color: rgb(36, 9, 9)
-}
-#edit-button:hover{
-  background-color: rgb(12, 70, 12);
 }

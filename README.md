@@ -1,6 +1,6 @@
 ### To-do List Assignment
 
-###### Create a simple todo list that has the following functionalities:
+#### Create a simple todo list that has the following functionalities:
 
 - You can add a new item to the todo list (required)
 - You can remove an item from the todo list (required)

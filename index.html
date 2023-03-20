@@ -11,22 +11,25 @@
 
   <body>
     <div class="container">
-      <h2>TODO LIST</h2>
-      <h3>Add new task</h3>
-      <div class="new-task-container">
-        <input id="new-task" type="text" />
-        <button id="add-button">Add</button>
-      </div>
+      <h2>TODO LIST APP</h2>
 
-      <h3>Todo</h3>
-      <div id="task">
-        <ul id="incomplete-tasks">
-          <li>
-            <p>first task</p>
-            <button id="edit-button">Edit</button>
-            <button id="delete-button">Delete</button>
-          </li>
-        </ul>
+      <!--new task-->
+      <div class="todo-list">
+        <div class="new-tasklist">
+          <input id="new-task" type="text" placeholder="Enter todo" />
+          <button id="add-button">Add</button>
+        </div>
+
+        <!--task list-->
+        <div class="tasks">
+          <!--<div id="item">
+           <p>Host live session with Stutern learners</p>
+            <div class="item-btn">
+              <button id="edit-button">Edit</button>
+              <button id="delete-button">Delete</button>
+            </div>
+          </div>-->
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
