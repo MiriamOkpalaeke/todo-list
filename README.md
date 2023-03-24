@@ -11,3 +11,5 @@
   prevent empty values from being added to the list
   the todo list must show the most recently added item first on the list
   the todo list should be stored using localStorage (see helpful resources below). So, when the page is reloaded, any item in the todo list will still be displayed on the web page.
+
+live link : https://simple-todo-list-task.netlify.app/
